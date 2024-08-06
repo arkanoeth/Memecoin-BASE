@@ -1,7 +1,12 @@
 [profile.default]
+rpc_url = "${RPC_URL}"
 src = "src"
 out = "out"
 libs = ["lib"]
+
+[profile.env]
+PRIVATE_KEY = "${PRIVATE_KEY}"
+RPC_URL = "${RPC_URL}"
 
 remappings = [
     "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
